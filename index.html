@@ -15,6 +15,7 @@
             background: linear-gradient(135deg, #2ecc71 0%, #145a32 100%);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
@@ -54,6 +55,11 @@
         button:active {
             transform: scale(0.95);
         }
+        footer {
+            margin-top: 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
@@ -73,6 +79,10 @@
         <p class="message">Esta é uma mensagem de boas-vindas ao seu primeiro projeto.</p>
         <button id="botaoAzul">Clique em mim</button>
     </div>
+
+    <footer>
+        Desenvolvido com IA no Android
+    </footer>
 
     <script>
         document.getElementById('botaoAzul').addEventListener('click', function() {
